@@ -13,9 +13,13 @@ app.get('/', function(req, res){
 app.get('/whoami', function(req, res){
 	var header = req.headers;
 	var regex = /\(([^)]+)\)/;
+	var ip = req.headers['x-forwarded-for'] || 
+     req.connection.remoteAddress || 
+     req.socket.remoteAddress ||
+     req.connection.socket.remoteAddress
 	var os = regex.exec(header["user-agent"]);
 	var obj = {
-		"ipaddress": header.host,
+		"ipaddress": ip,
 		"language": header["accept-language"],
 		"software": os[1]
 	}
