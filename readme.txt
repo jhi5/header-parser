@@ -1,5 +1,13 @@
-This is a microservice that provides basic WhoAmI data from the request header via a JSON object.
+Header Parser API Service
+Created by J. Munford
+Node JS / Express / HTML
 
-This project was created according to FreeCodeCamp guidelines. Visit my profile at FreeCodeCamp.com/jhi5.
+A simple API tool allowing users to have their IP, language and operating system served in a JSON object. 
 
-This project is available on github at https://github.com/jhi5/header-parser.
+Part of a series of small API tools created as a way to teach myself API basics.
+
+This project was created as part of a FreeCodeCamp program and to meet the following deliverables:
+
+* I can get the IP address, language and operating system for my browser.
+
+TO-DO: Write documentation within the code.
